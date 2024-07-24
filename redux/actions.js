@@ -1,20 +1,20 @@
 // Creation of constants for action types to identify the type of actions that will be dispatched.  
 
-export const ADD_TO_TALLY = "ADD_TO_TALLY";
-export const SUBTRACT_FROM_TALLY = "SUBTRACT_FROM_TALLY";
-export const RESET_TALLY = "RESET_TALLY";
+export const INCREMENT = "INCREMENT";
+export const DECREMENT = "DECREMENT";
+export const RESET = "RESET";
 
 // Action creator functions that return action objects  
-export const addToTally = () => ({
-    type: ADD_TO_TALLY,
-    payload: item,
+export const increment = () => ({
+    type: INCREMENT,
+    payload: 2,  // Set my increment amount to 2 
 });
 
-export const subtractFromTally = () => ({
-    type: SUBTRACT_FROM_TALLY,
-    payload: item,
+export const decrement  = () => ({
+    type: DECREMENT,
+    payload: 1, // Set my decremenet to 1 
 }); 
 
-export const resetTally = () => ({
-    type: RESET_TALLY,
+export const reset = () => ({
+    type: RESET,
 });
