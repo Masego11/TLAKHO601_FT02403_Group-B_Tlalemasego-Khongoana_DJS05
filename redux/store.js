@@ -1,7 +1,7 @@
 // Importing the reducer function 
 import reducer  from "./reducer.js";
 
-// store class defined to managed the state and hanlde sunbscription and dispatches 
+// store class defined to managed the state and handle subscription and dispatches 
 class Store {
     constructor(reducer, initialState) {  
         this.reducer = reducer;
